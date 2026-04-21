@@ -1,0 +1,252 @@
+:root {
+    --bg-main: #D3D3D3;
+    --bg-secondary: #D3D3D3;
+
+    --card: #E5E5E5;
+    --card-hover: #7f7f7f44;
+    --card-active: #8DCE88;
+
+    --accent: #E5E5E5;
+
+    --text-main: #050505;
+    --text-secondary: #65676B;
+    --text-muted: #8A8D91;
+    --border-line: #000000;
+    --circle-bg: #D4D4D4;
+
+    --border: #000000;
+}
+
+body {
+    background-color: var(--bg-main);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 344px;
+    margin: 14px auto;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.container.shadow {
+    box-shadow: 0 10px 24px 4px rgba(0, 0, 0, 0.244), 0 4px 6px -2px rgba(0, 0, 0, 0.244);
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+
+}
+
+.panel-button {
+    display: flex;
+    width: auto;
+    height: 24px;
+    padding: 1px 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent);
+    border-radius: 25px;
+}
+
+.right-panel-text {
+    margin-left: auto;
+    font-weight: bold;
+    font-size: 10px;
+    margin-right: 6px;
+}
+
+
+#world {
+    width: 100% !important;
+    height: 100% !important;
+
+    background: transparent;
+
+    overflow: hidden;
+
+}
+
+.world-container {
+    width: 100%;
+    height: 300px;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0;
+    border: none;
+}
+
+.buttom-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.add {
+    width: 44px;
+    height: 44px;
+    background-color: var(--accent);
+    border-radius: 6px;
+    overflow: hidden;
+    color: var(--text-secondary);
+    border: none;
+    outline: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nameContainer {
+
+    margin-right: auto;
+    padding-left: 14px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.box1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    padding: 10px 15px;
+    padding-bottom: 10px;
+
+    background-color: var(--card);
+    transition: 0.3s;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.done .box1 {
+    background-color: var(--card-active);
+}
+
+.box-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 54px;
+    padding: 10px 15px;
+    padding-bottom: 10px;
+    background-color: var(--card);
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.box1:hover,
+.box-button:hover {
+    background-color: var(--card-hover);
+}
+
+.box1::after,
+.box-button::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 44px;
+    width: calc(100% - 88px);
+    /* 44px отступ слева и справа */
+    height: 0.4px;
+    background: var(--border-line);
+}
+
+#taskA a:last-of-type .box1::after,
+#taskB a:last-of-type .box1::after,
+#taskC a:last-of-type .box1::after {
+    display: none;
+}
+
+.hide-line::after {
+    display: none !important;
+
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: var(--circle-bg);
+    border-radius: 50%;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle img {
+    width: 80%;
+    height: 80%;
+    color: white;
+    object-fit: cover;
+    
+}
+
+#toggleBtnA,
+#toggleBtnB,
+#toggleBtnC {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: 44px;
+    transform: rotate(-90deg);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+#toggleBtnA.rotated,
+#toggleBtnB.rotated,
+#toggleBtnC.rotated {
+    transform: rotate(90deg);
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-block.right {
+    margin-left: auto;
+    padding-right: 44px;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.right-text {
+
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.hidden {
+    display: none;
+}
+
+.empty-message {
+    padding: 15px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 12px;
+}

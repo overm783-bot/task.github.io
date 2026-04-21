@@ -1,0 +1,213 @@
+body {
+    background-color: #242424;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.container-icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    margin: 24px auto;
+    box-sizing: border-box;
+}
+
+.icon {
+    width: 44px;
+    height: 44px;
+    background-color: #6c6c6c;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.block-title {
+
+    width: auto;
+    height: auto;
+    padding: 5px 14px;
+    background-color: #6c6c6c;
+    border-radius: 14px;
+    border: none;
+    color: #e7e7e7;
+
+
+}
+
+#taskNameInput {
+    width: 100%;
+    border: none;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    outline: none;
+    color: #e7e7e7;
+    font-size: 14px;
+}
+
+#taskNameInput::placeholder {
+    text-align: center;
+    color: #e7e7e7;
+    opacity: 0.8;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 344px;
+    margin: 24px auto;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.box-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 14px 20px;
+    background: #6c6c6c;
+    box-sizing: border-box;
+}
+
+.text-block {
+    font-size: 14px;
+    color: #e7e7e7;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    padding: 10px 15px;
+    background: #6c6c6c;
+    box-sizing: border-box;
+}
+
+.box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 24px;
+    right: 24px;
+    height: 1px;
+    background: black;
+}
+
+.repeats-counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.repeats-counter button {
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 50%;
+    font-size: 14px;
+    background: #2c2c2e00;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.repeats-counter button:hover {
+    background: #3a3a3c;
+}
+
+#repeat-value {
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 10px;
+    text-align: center;
+    color: white;
+}
+
+.container a:last-child .box::after {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container a {
+    display: block;
+    width: 100%;
+}
+
+.text-block {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 10px;
+    opacity: 0.8;
+    color: #e7e7e7;
+}
+
+.subtitle {
+    font-size: 9px;
+    opacity: 0.7;
+    color: #e7e7e7;
+}
+
+.text-block-left {
+    margin-left: auto;
+    padding-right: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.day>div {
+    height: 24px;
+}
+
+.box-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px 5px;
+    width: 100%;
+    height: 34px;
+    background-color: #6c6c6c;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.button-slider {
+    position: absolute;
+    width: 74px;
+    height: 24px;
+    background-color: #b0b0b0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button-slider {
+    transition: 0.04s;
+}

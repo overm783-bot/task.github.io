@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="myjs.js"></script>
+</head>
+
+
+
+
+<body>
+  <div class="container">
+    <div class="panel">
+      <div class="panel-button">
+        <div class="right-panel-text">Задачи</div>
+        <div class="left-panel-text">Статы</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="world-container">
+      <div id="world"></div>
+      <script src="matter-js-master/matter.min.js"></script>
+      <script src="physics.js"></script>
+
+    </div>
+  </div>
+
+
+  <div class="buttom-container">
+    <a href="addtask.html">
+      <button class="add">+</button>
+    </a>
+  </div>
+
+  <div class="container">
+    <div class="nameContainer">Задачи категории A: </div>
+  </div>
+
+  <div class="container shadow">
+    <div class="panelTask">
+      <div class="box-button">
+        <div class="circle">
+          <img src="Обучение/Iconly/Regular/Bold/3 User.png" alt="">
+        </div>
+        <button id="toggleBtnA">></button>
+      </div>
+      <div id="taskA"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="nameContainer">Задачи категории B: </div>
+  </div>
+
+
+  <div class="container shadow">
+    <div class="box-button">
+      <div class="circle"></div>
+      <button id="toggleBtnB">></button>
+    </div>
+    <div id="taskB"></div>
+  </div>
+  <div class="container">
+    <div class="nameContainer">Задачи категории C: </div>
+  </div>
+
+  <div class="container shadow">
+    <div class="box-button">
+      <div class="circle"></div>
+      <button id="toggleBtnC">></button>
+    </div>
+    <div id="taskC"></div>
+  </div>
+  <script src="ui.js"></script>
+
+
+
+
+</body>
+
+</html>

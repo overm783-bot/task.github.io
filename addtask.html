@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="styleaddtask.css">
+    <script src="addtask.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container-icon">
+        <div img src="icon.png" class="icon"></div>
+        <div class="block-title">
+            <input type="text" id="taskNameInput" placeholder="Введите имя задачи">
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="box-text">
+            <div class="text-block">Тут мы пишем всякую всячину про то что мы хотели сделать мяу</div>
+            <div class="text-block">АХХАХАХАХАХАХХАХ</div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="box">
+            <div class="text-block">
+                <span class="title">Главный текст</span>
+                <span class="subtitle">Второй текст ниже</span>
+            </div>
+
+            <div class="text-block-left">
+                <div class="repeats-counter">
+                    <input type="hidden" id="taskCountInput" name="count" value="3">
+                    <button id="decrease">−</button>
+                    <span id="repeat-value">3</span>
+                    <button id="increase">+</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <a>
+            <div class="box">
+                <!-- Выбор типа задачи -->
+                <div class="task-type-selector">
+                    <label>
+                        <input type="radio" name="taskType" value="a" checked>
+                        Тип A
+                    </label>
+                    <label>
+                        <input type="radio" name="taskType" value="b">
+                        Тип B
+                    </label>
+                    <label>
+                        <input type="radio" name="taskType" value="c">
+                        Тип C
+                    </label>
+                </div>
+            </div>
+        </a>
+
+        <a>
+            <div class="box">
+                <div class="text-block">
+                    <span class="title">Главный текст</span>
+                    <span class="subtitle">Второй текст ниже</span>
+                </div>
+                <div class="text-block-left">
+                    <span class="title">Другое</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="container">
+        <button onclick="addTask()">Создать задачу</button>
+
+    </div>
+
+
+
+
+
+
+
+</body>
